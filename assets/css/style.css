@@ -1,0 +1,156 @@
+html, body {
+    width: 100%;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 120px;
+}
+
+h1, a, p, label, input {
+    font-family: Roboto, sans-serif;
+}
+
+.site-footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.site-footer > .container {
+    text-align: center;
+}
+
+.site-footer ul, .site-header ul, .user ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer ul p, .site-header ul p, .user ul p {
+    margin-bottom: 0;
+}
+
+.site-header {
+    padding: 0;
+}
+
+.site-header a {
+    text-decoration: none;
+}
+
+.site-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+.site-modal {
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.my-modal {
+    width: 70vw;
+    height: 20vh;
+    background-color: white;
+    position: fixed;
+    left: 15%;
+    top: 40%;
+    z-index: 1001;
+}
+
+.modal-text {
+    color: black;
+}
+
+.weather-container {
+    width: 180px;
+    min-height: 200px;
+    text-align: center;
+    margin: 3px;
+}
+
+.weather-value, .temperature-value {
+    color: #e5724e;
+}
+
+.location-container {
+    width: 50%;
+    min-height: 100px;
+}
+
+.value-cell {
+    padding-left: 12px;
+    font-weight: normal;
+    border-left: 1px solid black;
+}
+
+.naming-cell {
+    padding-right: 13px;
+    font-weight: bolder;
+}
+
+.loader {
+    margin-left: 10px;
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #000000;
+    width: 19px;
+    height: 19px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+table td, table th{
+    text-align: center;
+}
+
+.times-table, .visit-table {
+    margin-left: 5px;
+    width: 300px;
+}
+
+.times-table td, .times-table th, .visit-table th, .visit-table td {
+    text-align: center;
+    width: 150px;
+    border: 1px solid black;
+}
+
+#mapid{
+    height: 300px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
